@@ -112,13 +112,13 @@ namespace TimeTracker
             if (RemoteServer.IsConnected == true)
             {
                 RemoteServer.Disconnect();
-                ConnectOrDisconnectBtn.Header = "Подключиться к серверу";
+                ConnectOrDisconnectBtn.Header = "Connect to server";
             }
             else
             {
                 RemoteServer.Connect();
                 Worker.SetServiceContract(RemoteServer.ServiceContract);
-                ConnectOrDisconnectBtn.Header = "Отключиться от сервера";
+                ConnectOrDisconnectBtn.Header = "Disconnect from server";
             }
         }
     }

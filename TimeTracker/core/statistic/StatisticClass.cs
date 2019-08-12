@@ -69,7 +69,7 @@ namespace TimeTracker
 
         public StatisticClass(ILoger Loger)
         {
-            CommonPrimeWindowProperty = new CommonPrimeWindowPropertyClass() { TotalKeyPressed = "Нажатий клавиш клавиатуры: 0", TotalMouseMove = "Нажатий клавиш мыши: 0" };
+            CommonPrimeWindowProperty = new CommonPrimeWindowPropertyClass() { TotalKeyPressed = "Keyboard keystrokes: 0", TotalMouseMove = "Mouse clicks: 0" };
             this.Loger = Loger;
             TickTimer = new Timer(100);
             TickTimer.Elapsed += TickTimer_Elapsed;
@@ -78,8 +78,8 @@ namespace TimeTracker
 
         private void TickTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            CommonPrimeWindowProperty.TotalKeyPressed = "Нажатий клавиш клавиатуры: " + Loger.LogKeyItems.Count.ToString();
-            CommonPrimeWindowProperty.TotalMouseMove = "Нажатий клавиш мыши: " + Loger.LogMouseItems.Count.ToString();
+            CommonPrimeWindowProperty.TotalKeyPressed = "Keyboard keystrokes: " + Loger.LogKeyItems.Count.ToString();
+            CommonPrimeWindowProperty.TotalMouseMove = "Mouse clicks: " + Loger.LogMouseItems.Count.ToString();
         }
     }
 }

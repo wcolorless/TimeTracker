@@ -38,9 +38,9 @@ namespace TimeTrackerServer
             {
                 Grid grid = new Grid() { Height = 50, Width = 680, HorizontalAlignment = HorizontalAlignment.Center };
                 grid.Children.Add(new Border() { BorderBrush = Brushes.Black, BorderThickness = new Thickness(1) });
-                grid.Children.Add(new TextBlock() { Text = "Участник: " + Credentials.Name, HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(10) });
-                grid.Children.Add(new TextBlock() { Text = "Уровень активности: 0", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
-                grid.Children.Add(new TextBlock() { Text = "Последнее обновление активности: " + DateTime.Now.ToLongTimeString(), HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
+                grid.Children.Add(new TextBlock() { Text = "User: " + Credentials.Name, HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(10) });
+                grid.Children.Add(new TextBlock() { Text = "Activity level: 0", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
+                grid.Children.Add(new TextBlock() { Text = "Last activity update: " + DateTime.Now.ToLongTimeString(), HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
                 GlobalUIVars.ListOfWorkers.Children.Add(grid);
             }
 
@@ -61,9 +61,9 @@ namespace TimeTrackerServer
             {
                 Grid grid = new Grid() { Height = 50, Width = 680, HorizontalAlignment = HorizontalAlignment.Center };
                 grid.Children.Add(new Border() { BorderBrush = Brushes.Black, BorderThickness = new Thickness(1) });
-                grid.Children.Add(new TextBlock() { Text = "Участник: " + MemberList.Members[i].Credentials.Name, HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(10) });
-                grid.Children.Add(new TextBlock() { Text = "Уровень активности: " + MemberList.Members[i].PingStatistics.ActiveLevel, HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
-                grid.Children.Add(new TextBlock() { Text = "Последнее обновление активности: " + DateTime.Now.ToLongTimeString(), HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
+                grid.Children.Add(new TextBlock() { Text = "User: " + MemberList.Members[i].Credentials.Name, HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(10) });
+                grid.Children.Add(new TextBlock() { Text = "Activity level: " + MemberList.Members[i].PingStatistics.ActiveLevel, HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
+                grid.Children.Add(new TextBlock() { Text = "Last activity update: " + DateTime.Now.ToLongTimeString(), HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(10) });
                 GlobalUIVars.ListOfWorkers.Children.Add(grid);
             }
         }

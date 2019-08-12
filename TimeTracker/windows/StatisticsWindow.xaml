@@ -14,7 +14,7 @@
             <RowDefinition Height="15"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#FF6DB092" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,1,0,0" TextWrapping="Wrap" Text="Статистика" VerticalAlignment="Center" FontFamily="Consolas" FontSize="16">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,1,0,0" TextWrapping="Wrap" Text="Statistics" VerticalAlignment="Center" FontFamily="Consolas" FontSize="16">
                 <TextBlock.Effect>
                     <DropShadowEffect BlurRadius="1" ShadowDepth="1"/>
                 </TextBlock.Effect>
@@ -23,11 +23,11 @@
         </Grid>
         <Grid  Grid.Row="1">
             <Menu FontFamily="Consolas" FontSize="14.667">
-                <MenuItem Header="Статистика">
-                    <MenuItem Header="Открыть" Click="OpenLogBtn"/>
-                    <MenuItem Header="Сохранить" Click="SaveLogBtn"/>
+                <MenuItem Header="Statistics">
+                    <MenuItem Header="Open" Click="OpenLogBtn"/>
+                    <MenuItem Header="Save" Click="SaveLogBtn"/>
                 </MenuItem>
-                <MenuItem Header="Выход" Click="CloseApp"/>
+                <MenuItem Header="Exit" Click="CloseApp"/>
 
             </Menu>
         </Grid>
@@ -42,7 +42,7 @@
                     <RowDefinition Height="0.9*"/>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0" Background="#FFC0EAC8">
-                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Активность мыши" VerticalAlignment="Center" FontFamily="Consolas" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Mouse activity" VerticalAlignment="Center" FontFamily="Consolas" FontSize="14"/>
 
                 </Grid>
                 <Grid Grid.Row="1">
@@ -59,7 +59,7 @@
                     <RowDefinition Height="0.9*"/>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0" Background="#FFC0EAC8">
-                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Активность клавиатуры" VerticalAlignment="Center" FontFamily="Consolas" FontSize="14" Width="165"/>
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Keyboard Activity" VerticalAlignment="Center" FontFamily="Consolas" FontSize="14" Width="134" Margin="1,-1,0,0"/>
 
                 </Grid>
                 <Grid Grid.Row="1">

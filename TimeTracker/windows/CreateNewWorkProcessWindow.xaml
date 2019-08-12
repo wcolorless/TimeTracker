@@ -13,7 +13,7 @@
             <RowDefinition Height="15"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#FF6DB092" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,1,0,0" TextWrapping="Wrap" Text="Пользователь" VerticalAlignment="Center" FontFamily="Consolas" FontSize="16">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,1,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Center" FontFamily="Consolas" FontSize="16">
                 <TextBlock.Effect>
                     <DropShadowEffect BlurRadius="1" ShadowDepth="1"/>
                 </TextBlock.Effect>
@@ -21,7 +21,7 @@
 
         </Grid>
         <Grid x:Name="PrimePanel" Grid.Row="1">
-            <Button x:Name="button" Content="Закрыть" HorizontalAlignment="Left" Margin="308,268,0,0" VerticalAlignment="Top" Width="100" Background="White" Foreground="Black" BorderBrush="Black" RenderTransformOrigin="0.5,0.5" Click="CloseApp">
+            <Button x:Name="button" Content="Close" HorizontalAlignment="Left" Margin="308,268,0,0" VerticalAlignment="Top" Width="100" Background="White" Foreground="Black" BorderBrush="Black" RenderTransformOrigin="0.5,0.5" Click="CloseApp">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleY="1" ScaleX="1"/>
@@ -31,7 +31,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="button_Copy" Content="Сохранить" HorizontalAlignment="Left" Margin="203,268,0,0" VerticalAlignment="Top" Width="100" Background="#FF86E0B3" Foreground="Black" BorderBrush="Black" RenderTransformOrigin="0.5,0.5">
+            <Button x:Name="button_Copy" Content="Save" HorizontalAlignment="Left" Margin="203,268,0,0" VerticalAlignment="Top" Width="100" Background="#FF86E0B3" Foreground="Black" BorderBrush="Black" RenderTransformOrigin="0.5,0.5">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleY="1" ScaleX="1"/>
@@ -42,7 +42,7 @@
                 </Button.RenderTransform>
             </Button>
             <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="398"/>
-            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="Имя пользователя:" VerticalAlignment="Top" FontFamily="Consolas" FontSize="13.333"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" FontFamily="Consolas" FontSize="13.333"/>
 
 
         </Grid>

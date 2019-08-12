@@ -18,19 +18,19 @@
         </Grid>
         <Grid Grid.Row="1">
             <Menu FontFamily="Consolas" FontSize="14.667">
-                <MenuItem Header="Процесс">
-                    <MenuItem Header="Запустить">
-                        <MenuItem Header="Стандартный" Click="AddWorkFlowStandartDayBtn"/>
-                        <MenuItem Header="Помидор" Click="AddWorkFlowPomodorBtn"/>
+                <MenuItem Header="Process">
+                    <MenuItem Header="Start">
+                        <MenuItem Header="Standard" Click="AddWorkFlowStandartDayBtn"/>
+                        <MenuItem Header="Tomato" Click="AddWorkFlowPomodorBtn"/>
                     </MenuItem>
-                    <MenuItem Header="Остановить все процессы" Click="StopWorkerBtn"/>
+                    <MenuItem Header="Stop all processes" Click="StopWorkerBtn"/>
                     <Separator/>
-                    <MenuItem x:Name="ConnectOrDisconnectBtn" Header="Подключиться к серверу" Click="ConnectOrDisconnectToServerBtn"/>
+                    <MenuItem x:Name="ConnectOrDisconnectBtn" Header="Connect to server" Click="ConnectOrDisconnectToServerBtn"/>
                 </MenuItem>
-                <MenuItem Header="Пользователь" Click="OpenUserWindowBtn"/>
-                <MenuItem Header="Статистика" Click="OpenStatiscticsWindowBtn"/>
-                <MenuItem Header="Настройки" Click="OpenSettingsWindowBtn"/>
-                <MenuItem Header="Выход" Click="CloseApp"/>
+                <MenuItem Header="User" Click="OpenUserWindowBtn"/>
+                <MenuItem Header="Statistics" Click="OpenStatiscticsWindowBtn"/>
+                <MenuItem Header="Settings" Click="OpenSettingsWindowBtn"/>
+                <MenuItem Header="Exit" Click="CloseApp"/>
             </Menu>
         </Grid>
         <Grid x:Name="PrimePanel" Grid.Row="2">
@@ -40,8 +40,8 @@
             <Rectangle   HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="428"/>
             <Rectangle  HorizontalAlignment="Left" Height="43" Margin="31,165,0,0" Stroke="Black" VerticalAlignment="Top" Width="385" Fill="#FF5AC38A" />
             <Rectangle x:Name="LeftTimeIndicator" Width="{Binding TimeLeftPercent}" Fill="#FFAAB3DA"  HorizontalAlignment="Left" Height="43" Margin="31,165,0,0" Stroke="Black" VerticalAlignment="Top" />
-            <TextBlock  HorizontalAlignment="Left" Margin="31,143,0,0" TextWrapping="Wrap" Text="Оставшееся рабочее время: " VerticalAlignment="Top" FontFamily="Consolas" FontSize="14.667"/>
-            <TextBlock  HorizontalAlignment="Left" Margin="31,220,0,0" TextWrapping="Wrap" Text="Общий уровень активности: " VerticalAlignment="Top" FontFamily="Consolas" FontSize="14.667"/>
+            <TextBlock  HorizontalAlignment="Left" Margin="31,143,0,0" TextWrapping="Wrap" Text="Remaining working time: " VerticalAlignment="Top" FontFamily="Consolas" FontSize="14.667"/>
+            <TextBlock  HorizontalAlignment="Left" Margin="31,220,0,0" TextWrapping="Wrap" Text="Overall activity: " VerticalAlignment="Top" FontFamily="Consolas" FontSize="14.667"/>
             <Rectangle  HorizontalAlignment="Left" Height="100" Margin="34,260,0,0" Stroke="Black" VerticalAlignment="Top" Width="110" Fill="#FF98C6CB" />
             <Rectangle  x:Name="KeysActivityIndicator"  Fill="#FF90E8CC"  HorizontalAlignment="Left" Height="{Binding KeysActivity}" Margin="34,260,0,0" Stroke="Black" VerticalAlignment="Top" Width="110"/>
             <TextBlock  HorizontalAlignment="Left" Margin="34,242,0,0" TextWrapping="Wrap" Text="KPH" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14.667"/>

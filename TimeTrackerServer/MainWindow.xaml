@@ -23,14 +23,14 @@
         </Grid>
         <Grid Grid.Row="1">
             <Menu FontFamily="Consolas" FontSize="14.667">
-                <MenuItem Header="Рабочий процесс">
-                    <MenuItem Header="Открыть"/>
-                    <MenuItem Header="Сохранить"/>
+                <MenuItem Header="The working process">
+                    <MenuItem Header="Open"/>
+                    <MenuItem Header="Save"/>
                     <Separator/>
-                    <MenuItem x:Name="StartOrStopMenuBtn" Header="Запустить" Click="StartOrStopWorkFlowBtn"/>
+                    <MenuItem x:Name="StartOrStopMenuBtn" Header="Start" Click="StartOrStopWorkFlowBtn"/>
                 </MenuItem>
-                <MenuItem Header="Настройки" Click="OpenSettingsWindowBtn"/>
-                <MenuItem Header="Выход" Click="CloseApp"/>
+                <MenuItem Header="Settings" Click="OpenSettingsWindowBtn"/>
+                <MenuItem Header="Exit" Click="CloseApp"/>
             </Menu>
         </Grid>
         <Grid Grid.Row="2">
